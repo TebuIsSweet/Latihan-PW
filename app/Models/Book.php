@@ -4,8 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Controllers\BookController;
 
 class Book extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'judul',
+        'pengarang',
+        'penerbit',
+        'tahun_terbit',
+        'jumlah_halaman',
+    ];
 }
